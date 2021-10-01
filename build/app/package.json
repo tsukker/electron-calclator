@@ -1,7 +1,7 @@
 {
   "name": "electron-calculator",
   "productName": "electron-calculator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "My awesome calculator app created with Electron",
   "main": "./dist/main/main.js",
   "author": {
