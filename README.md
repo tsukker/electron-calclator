@@ -31,7 +31,7 @@ yarn package
 See also: [publish.yml](.github/workflows/publish.yml)
 
 ```sh
-yarn postinstall && yarn build && yarn electron-builder --publish always --win --mac --linux
+yarn postinstall && yarn build && yarn electron-builder --publish never --win --mac --linux
 ```
 
 ## Docs for electron-react-boilerplate
