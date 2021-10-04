@@ -1,3 +1,4 @@
+/* eslint @typescript-eslint/no-var-requires: off */
 const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('electron', {
