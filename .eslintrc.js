@@ -1,9 +1,19 @@
 module.exports = {
-  extends: 'erb',
-  rules: {
-    // A temporary hack related to IDE not resolving correct package.json
-    'import/no-extraneous-dependencies': 'off',
+  // https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md#configuration
+  root: true,
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+  ],
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
   },
+  rules: {},
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
