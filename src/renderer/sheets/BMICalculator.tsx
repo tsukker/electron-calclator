@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { FormControl, InputGroup } from 'react-bootstrap';
+import React, { useState } from "react";
+import { FormControl, InputGroup } from "react-bootstrap";
 
 const BMICalculator = () => {
-  const [heightCm, setHeightCm] = useState('' as string);
-  const [weightKg, setWeightKg] = useState('' as string);
+  const [heightCm, setHeightCm] = useState("" as string);
+  const [weightKg, setWeightKg] = useState("" as string);
   return (
     <>
       <InputGroup className="mb-3">
@@ -29,7 +29,7 @@ const BMICalculator = () => {
       </InputGroup>
       <br />
       <div>
-        {'BMI : '}
+        {"BMI : "}
         {(() => {
           const numHeightCm = Number(heightCm);
           const numWeightKg = Number(weightKg);
@@ -39,7 +39,7 @@ const BMICalculator = () => {
             numHeightCm <= 0 ||
             numWeightKg <= 0
           ) {
-            return '-----';
+            return "-----";
           }
           const bmi = (numWeightKg * 10000) / (numHeightCm * numHeightCm);
           return bmi.toFixed(2);

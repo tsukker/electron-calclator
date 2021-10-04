@@ -1,7 +1,7 @@
-import React from 'react';
-import { MemoryRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.global.css';
-import BMICalculator from './sheets/BMICalculator';
+import React from "react";
+import { MemoryRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.global.css";
+import BMICalculator from "./sheets/BMICalculator";
 
 export default function App() {
   return (
