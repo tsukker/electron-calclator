@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FormControl, InputGroup } from "react-bootstrap";
 
-const BMICalculator = () => {
+const BMICalculator = (): JSX.Element => {
   const [heightCm, setHeightCm] = useState("" as string);
   const [weightKg, setWeightKg] = useState("" as string);
   return (
